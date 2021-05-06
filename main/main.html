@@ -1,0 +1,94 @@
+<html>
+  <title>Goorac</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="src/style/style.css">
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+</head>
+<body>
+     <!--The home page-->
+  <div id="Page1"> 
+      <center>
+        <header>
+            <ul>
+             <li><a class="links" href="#user"><button class="signbutton" type="button">Sign in</button></a></li>
+               <li><a href="#grid"><img class="grid" src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png" title="Google apps"></a></li>
+              <li><a href="#images">Images</a></li>
+              <li><a href="src/pages/video chat/videoChat.html">Videos</a></li>
+              </ul>  
+        </header>
+        <div class="logo">
+          <p style="font-size: 32px;" ><b>Goorac</b></p>
+         <!-- <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">-->
+        </div>
+        <div class="bar" >
+          <a href="#"> <img class="searchicon" data-toggle="modal" data-target="#myModal" id="" src="src/img/searchicon.png" title=""></a>
+    <input class="searchbar" type="text" placeholder="Search" onclick="show('Page2','Page1');searchPageAutoFocus()" title="Search">
+    <a href="#"> <img onclick="init();runSpeechRecognition2()" class="voice" data-toggle="modal" data-target="#myModal" id="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
+        </div>
+        <div class="buttons">
+          <button class="button" type="button">Google Search</button>
+          <button class="button" type="button">I'm Feeling Lucky</button>
+         </div>
+</div>
+</center>
+   <!-- The Modal -->
+   <center><div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <main>
+           <!--Here visuvalizer-->
+          </main>
+          <h5 style="margin-top: 45px;">Listening...</h5>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        <p style="color:blue">Ask"Who is your boss?"</p>
+        </div>
+      </div>
+    </div>
+  </div></center>
+<!--search div-->
+  <div id="Page2" style="display:none">
+    <div class="bar9">
+      <a href="#"> <img class="searchicon" src="src/img/searchicon.png" title=""></a>
+<input class="searchbar9" required type="search" placeholder="Search" id="dggfdf" title="Search">
+<a href="#"> <img onclick="init();runSpeechRecognition()" class="voice" data-toggle="modal" data-target="#myModal" id="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>  
+</div>
+<div class="searchrr">
+    <p id="before"> ggtgrf</p>  
+  </div>
+    <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
+  </div>
+  <!--Result page Div-->
+  <div id="Page3" style="display:none">
+    <div style="background-color :white ;position: relative;">
+   <center> <p style="font-size: 25px;" ><b>Goorac</b></p></center>
+    <div class="bar99">
+      <a href="#"> <img class="searchicon"  id="" src="src/img/searchicon.png" title=""></a>
+<input id="asd" class="searchbar99" type="text" placeholder="Search" onclick="show('Page2','Page3');searchPageAutoFocus()" title="Search">
+<a href="#"> <img onclick="init();runSpeechRecognition2()" class="voice" data-toggle="modal" data-target="#myModal" id="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
+    </div>
+  </div>
+  <iframe    height="100%" width="100%" style="margin-top: -100px;" id="fsdy" class="resultEmbed" width="100%" height="100%" type="text/html" src=""></iframe>
+  </div>
+    <script src="src/js/main.js"></script>
+</body>
+</html> 
