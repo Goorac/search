@@ -94,10 +94,14 @@ function la() {
   }
 }
 function login() {
-  var pa = localStorage.getItem("userPassword").value;
+  setTimeout(
+    function() {
+      var pa = localStorage.getItem("userPassword").value;
   if( pa == null ){
  window.location.href = "../../../main.html";
   }
+    }, 1000);
+  
 
 }
 </script>
