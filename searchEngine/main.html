@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/style/style.css">
 <script>
 function show(shown, hidden) {
@@ -22,12 +23,13 @@ function show(shown, hidden) {
       <center>
         <header>
             <ul>
-             <li><a class="links" href="#user"><button class="signbutton" type="button">Sign in</button></a></li>
+             <li><a class="links" href="#user"><button class="signbutton" type="button"><i style="font-size:24px" class="fa">&#xf013;</i></button></a></li>
                <li><a href="#grid"><img class="grid" src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png" title="Google apps"></a></li>
               <li><a href="#images">Images</a></li>
               <li><a href="src/pages/video chat/videoChat.html">Videos</a></li>
               </ul>  
         </header>
+        <br>
         <div class="logo">
           <p style="font-size: 32px;" ><b>Goorac</b></p>
          <!-- <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">-->
@@ -74,6 +76,8 @@ function show(shown, hidden) {
 </div>
 <div class="searchrr">
     <p id="before"> ggtgrf</p>  
+    <!--First time info-->
+    <p id="qw"></p>
   </div>
     <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
   </div>

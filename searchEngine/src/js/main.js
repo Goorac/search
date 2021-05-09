@@ -83,6 +83,14 @@ const init = () => {
 //start of search page autofocus
 function searchPageAutoFocus() {
   document.getElementById("dggfdf").focus();
+  var qw = localStorage.getItem("data");
+  if( qw == null ){
+    document.getElementById("qw").innerHTML = "<center><br><br><br><br><img src='https://cdn.dribbble.com/users/1785190/screenshots/3906047/search.gif'" + 'style="width:200px;hight:auto"' + "></center>"
+    localStorage.setItem("data", "<center>Siva Manikandan</center>" );
+  }
+  else{
+    document.getElementById("qw").style.display = "none";
+  }
 }
 //Start of previus search result
 var nkfjfd = localStorage.getItem("data");
@@ -90,8 +98,8 @@ document.getElementById("before").innerHTML = nkfjfd;
 function ss(){
   var q = document.getElementById("dggfdf").value;
   var p = localStorage.getItem("data");
-  var g =   "<p type='button'" +  'onclick="handleClick(event)">' + "🕒 " + q  + "," + p +"</p>";
-  var res = g.replace(",", "<p>");
+  var g =   "<p type='button'" + 'style="font-size:16px"' + 'onclick="handleClick(event)">' + "🕒 " + q  + "," + p +"</p>";
+  var res = g.replace(",", "<hr>");
   localStorage.setItem("data", res );
   document.getElementById("before").innerHTML = res ;
 }

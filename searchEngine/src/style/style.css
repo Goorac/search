@@ -128,8 +128,7 @@ li a:hover {
   width: 375px;
   border-radius:15px;
   border:1px solid #dcdcdc;
-  overflow-y:hidden;
-  overflow-y:hidden;
+  overflow-y:auto;
 }
 *,
 *::before,
