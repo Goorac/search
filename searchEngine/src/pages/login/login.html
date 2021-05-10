@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body onload="login()" >
+<body>
     <center>
     <div id="Page1">
         <br> <br>
@@ -92,17 +92,6 @@ function la() {
   else {
     document.getElementById("name").style.backgroundColor = "#98e3a6";
   }
-}
-function login() {
-  setTimeout(
-    function() {
-      var pa = localStorage.getItem("userPassword").value;
-  if( pa == null ){
- window.location.href = "../../../main.html";
-  }
-    }, 1000);
-  
-
 }
 </script>
 <style> 
