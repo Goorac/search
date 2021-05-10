@@ -82,13 +82,13 @@ const init = () => {
 //End of voice visuvalizer
 //start of search page autofocus
 function searchPageAutoFocus() {
-  document.getElementById("dggfdf").focus();
   var qw = localStorage.getItem("data");
   if( qw == null ){
     document.getElementById("qw").innerHTML = "<center><br><br><br><br><img src='https://cdn.dribbble.com/users/1785190/screenshots/3906047/search.gif'" + 'style="width:200px;hight:auto"' + "></center>"
     localStorage.setItem("data", "<center>Siva Manikandan</center>" );
   }
   else{
+    document.getElementById("dggfdf").focus();
     document.getElementById("qw").style.display = "none";
   }
 }
