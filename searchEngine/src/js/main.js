@@ -98,7 +98,7 @@ document.getElementById("before").innerHTML = nkfjfd;
 function ss(){
   var q = document.getElementById("dggfdf").value;
   var p = localStorage.getItem("data");
-  var g =   "<p type='button'" + 'style="font-size:16px"' + 'onclick="handleClick(event)">' + " " + "🕒 " + q  + "," + p +"</p>";
+  var g =   "<p type='button'" + 'style="font-size:16px"' + 'onclick="handleClick(event)">' + "🕒 " + q  + "," + p +"</p>";
   var res = g.replace(",", "<hr>");
   localStorage.setItem("data", res );
   document.getElementById("before").innerHTML = res ;
@@ -216,7 +216,7 @@ function jghhh2() {
 function login() {
   var pa = localStorage.getItem("userPassword");
   if( pa == null ){
- window.location.href = "src/pages/login/login.html";
+ window.location.href = "pages/login/login.html";
   }
 
 }
