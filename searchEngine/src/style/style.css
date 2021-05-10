@@ -124,6 +124,7 @@ li a:hover {
 }
 .searchrr {
   height: 800px;
+    margin:0 auto;
   width: 365px;
   border-radius:15px;
   overflow-y:auto;
