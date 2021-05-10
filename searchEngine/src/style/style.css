@@ -124,12 +124,10 @@ li a:hover {
 }
 .searchrr {
   height: 800px;
-    margin:0 auto;
   width: 365px;
   border-radius:15px;
-  border:1px solid #dcdcdc;
   overflow-y:auto;
-  margin-top: 5px;
+  margin-top: 1px;
 }
 *,
 *::before,
