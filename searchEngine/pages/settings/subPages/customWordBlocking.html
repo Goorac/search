@@ -37,26 +37,14 @@ function ss(){
     document.getElementById("ads").style.backgroundColor = "silver"
       return false;
   }
-  var p = localStorage.getItem("dataB");
   var pp = localStorage.getItem("dataBb");
-  var g =   "<p type='button'" + 'style="font-size:16px">' +  q  + p +"</p>";
   var gg = q + "-"  + pp  ;
   localStorage.setItem("dataBb", gg );
-  localStorage.setItem("dataB", g );
-  document.getElementById("before").innerHTML = g ;
+  document.getElementById("before").innerHTML = gg ;
 }
 function s() {
-  var rt = localStorage.getItem("dataB");
-  if( rt == null ){
-    localStorage.setItem("dataBb", "bloody" );
-  localStorage.setItem("dataB", "<br>Try to search<b> Bloody </b>In search pannel" );
-   var s = localStorage.getItem("dataB");
-  document.getElementById("before").innerHTML = s ;
-  }
-  else{
   var rt = localStorage.getItem("dataBb");
   document.getElementById("before").innerHTML = rt ;
   }
-}
 </script>
 </html>
