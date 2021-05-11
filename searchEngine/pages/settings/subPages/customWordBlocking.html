@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../src/style/style.css">
 </head>
-<body>
+<body onload="s()" >
     <div class="settingsText">
         <p class="afh"><i type="button" onclick="window.history.back();" class="fa">&#xf060;</i><b> Custom Word Blocking</b></p>
     </div>
@@ -40,9 +40,15 @@ function ss(){
     var qw = document.getElementById("ads").value;
   var py = localStorage.getItem("dataB");
   var ga =   qw + "-" + py ;
-  var res = ga.replace("-", "<hr>");
-  localStorage.setItem("dataB",ga  );
-  document.getElementById("before").innerHTML = ga;
+  var res = ga.replace("null", "bloody");
+  localStorage.setItem("dataB",res );
+  document.getElementById("before").innerHTML = res ;
+  }
+}
+function s() {
+  var yy = localStorage.getItem("dataB");
+  if( yy == null ){
+     localStorage.setItem("dataB","bloody");
   }
 }
 </script>
