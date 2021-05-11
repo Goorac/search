@@ -220,3 +220,43 @@ function login() {
   }
 
 }
+//bad word filter
+function check_val(){
+  var sd = localStorage.getItem("dataBb")
+  var ty = sd.split("-");
+ var bad_words= ty
+ var check_text=document.getElementById("dggfdf").value;
+ var error=0;
+ for(var i=0;i<bad_words.length;i++)
+ {
+  var val=bad_words[i];
+  if((check_text.toLowerCase()).indexOf(val.toString())>-1)
+  {
+   error=error+1;
+  }
+ }
+	
+ if(error>0)
+ {
+ alert("This action is recorded!");
+ var check_text=document.getElementById("dggfdf").style.backgroundColor = " #ffcccb";
+ wordU();
+ location.reload();
+ }
+ else
+ {
+  
+ }
+}
+function wordU() {
+  var pyw = localStorage.getItem("dataW");
+  if( pyw == "" ){
+    localStorage.setItem("dataW","Appear here")
+  }
+  var d = new Date();
+  var qw = document.getElementById("dggfdf").value;
+  var py = localStorage.getItem("dataW");
+  var ga =   "<p type='button'" + 'style="font-size:16px"' + '>' + "🕒 " + qw + "<br>" + d + "," + py + "</p>";
+  var res = ga.replace(",", "<hr>");
+  localStorage.setItem("dataW", res );
+}

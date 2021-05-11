@@ -14,7 +14,7 @@
 </head>
 <body  onload="run()" >
     <div class="settingsText">
-        <p class="afh"><i type="button" onclick="window.history.back();" class="fa">&#xf060;</i><b> All datas in Search</b></p>
+        <p class="afh"><i type="button" onclick="window.history.back();" class="fa">&#xf060;</i><b> Illegal words Searches</b></p>
     </div>
     <div style=" overflow-y:auto;" >
         <p class="options" id="before"></p>
@@ -22,9 +22,8 @@
 </body>
 <script>
     function run() {
-    var p = localStorage.getItem("data");
-  var res = p.replace("<hr>","<br>");
-document.getElementById("before").innerHTML = res;
+    var p = localStorage.getItem("dataW");
+document.getElementById("before").innerHTML = p;
     }
 </script>
 </html>
