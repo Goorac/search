@@ -225,8 +225,8 @@ function login() {
 function check_val(){
   var sd = localStorage.getItem("dataBb")
   var ty = sd.split("-");
- var bad_words= ty
- var check_text=document.getElementById("dggfdf").value;
+ var bad_words= ty;
+ var check_text = document.getElementById("dggfdf").value;
  var error=0;
  for(var i=0;i<bad_words.length;i++)
  {
@@ -246,7 +246,7 @@ function check_val(){
  }
  else
  {
-  
+  console.log(this);
  }
 }
 function wordU() {
