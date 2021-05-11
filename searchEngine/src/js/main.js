@@ -223,9 +223,9 @@ function login() {
 }
 //bad word filter
 function check_val(){
-  var sd = localStorage.getItem("dataBb")
+  var sd = localStorage.getItem("dataBb");
   var ty = sd.split("-");
- var bad_words= ty;
+ var bad_words = ty;
  var check_text = document.getElementById("dggfdf").value;
  var error=0;
  for(var i=0;i<bad_words.length;i++)
