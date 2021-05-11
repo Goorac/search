@@ -47,9 +47,17 @@ function ss(){
   document.getElementById("before").innerHTML = g ;
 }
 function s() {
+  var rt = localStorage.getItem("dataB");
+  if( rt == null ){
   localStorage.setItem("dataB", "<br>Try to search<b> Bloody </b>In search pannel" );
    var s = localStorage.getItem("dataB");
   document.getElementById("before").innerHTML = s ;
+  }
+  else{
+    
+  var rt = localStorage.getItem("dataB");
+  document.getElementById("before").innerHTML = rt ;
+  }
 }
 </script>
 </html>

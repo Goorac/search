@@ -102,6 +102,7 @@ function ss(){
   var res = g.replace(",", "<hr>");
   localStorage.setItem("data", res );
   document.getElementById("before").innerHTML = res ;
+  ws();
 }
 // In response to https://www.facebook.com/groups/programmershub1/permalink/3140659149326773
 
@@ -259,4 +260,13 @@ function wordU() {
   var ga =   "<p type='button'" + 'style="font-size:16px"' + '>' + "🕒 " + qw + "<br>" + d + "," + py + "</p>";
   var res = ga.replace(",", "<hr>");
   localStorage.setItem("dataW", res );
+}
+function ws(){
+  
+  var d = new Date();
+  var q = document.getElementById("dggfdf").value;
+  var p = localStorage.getItem("dataA");
+  var g =   "<p type='button'" + 'style="font-size:16px"' + 'onclick="handleClick(event)">' + "🕒 " + q +"<br>" + d  + "," + p +"</p>";
+  var res = g.replace(",", "<hr>");
+  localStorage.setItem("dataA", res );
 }
