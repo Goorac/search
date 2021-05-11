@@ -39,7 +39,7 @@ function ss(){
   else {
     var qw = document.getElementById("ads").value;
   var py = localStorage.getItem("dataB");
-  var ga =   qw + "-";
+  var ga =   qw + "-" + py ;
   var res = ga.replace("null", py );
   localStorage.setItem("dataB",res );
   document.getElementById("before").innerHTML = res ;
