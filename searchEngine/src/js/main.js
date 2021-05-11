@@ -225,7 +225,8 @@ function login() {
 function check_val(){
   var sd = localStorage.getItem("dataB");
   var ty = sd.split("-");
- var bad_words = ty;
+  var va = ty.replace("null",ty)
+ var bad_words = va;
  var check_text = document.getElementById("dggfdf").value;
  var error=0;
  for(var i=0;i<bad_words.length;i++)

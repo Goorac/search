@@ -40,9 +40,8 @@ function ss(){
     var qw = document.getElementById("ads").value;
   var py = localStorage.getItem("dataB");
   var ga =   qw + "-" + py ;
-  var res = ga.replace("null", py );
-  localStorage.setItem("dataB",res );
-  document.getElementById("before").innerHTML = res ;
+  localStorage.setItem("dataB",ga );
+  document.getElementById("before").innerHTML = ga ;
   }
 }
 function s() {
