@@ -43,6 +43,10 @@ function ss(){
   document.getElementById("before").innerHTML = gg ;
 }
 function s() {
+  var rr = localStorage.getItem("dataBb");
+  if(rr == null){
+    localStorage.setItem("dataBb","boo");
+  }
   var rt = localStorage.getItem("dataBb");
   document.getElementById("before").innerHTML = rt ;
   }
