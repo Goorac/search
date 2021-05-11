@@ -39,17 +39,14 @@ function ss(){
   else {
     var qw = document.getElementById("ads").value;
   var py = localStorage.getItem("dataB");
-  var ga =   qw + "-" + py ;
+  var ga =   qw + "-";
   var res = ga.replace("null", py );
   localStorage.setItem("dataB",res );
   document.getElementById("before").innerHTML = res ;
   }
 }
 function s() {
-  var yy = localStorage.getItem("dataB");
-  if( yy == null ){
-     localStorage.setItem("dataB","bloody");
-  }
+ 
 }
 </script>
 </html>
