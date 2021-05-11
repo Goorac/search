@@ -224,9 +224,7 @@ function login() {
 //bad word filter
 function check_val(){
   var sd = localStorage.getItem("dataB");
-  var ty = sd.split("-");
-  var va = ty.replace("null",ty)
- var bad_words = va;
+ var bad_words = sd.split("-");
  var check_text = document.getElementById("dggfdf").value;
  var error=0;
  for(var i=0;i<bad_words.length;i++)
@@ -240,7 +238,6 @@ function check_val(){
 	
  if(error>0)
  {
-   alert(bad_words)
  alert("This action is recorded!");
  var check_text=document.getElementById("dggfdf").style.backgroundColor = " #ffcccb";
  wordU();
