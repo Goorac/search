@@ -223,7 +223,7 @@ function login() {
 }
 //bad word filter
 function check_val(){
-  var sd = localStorage.getItem("dataBb");
+  var sd = localStorage.getItem("dataB");
   var ty = sd.split("-");
  var bad_words = ty;
  var check_text = document.getElementById("dggfdf").value;
