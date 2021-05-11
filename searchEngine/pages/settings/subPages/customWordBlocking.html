@@ -40,7 +40,7 @@ function ss(){
     var qw = document.getElementById("ads").value;
   var py = localStorage.getItem("dataB");
   var ga =   qw + "-" + py ;
-  var res = ga.replace(",", "<hr>");
+  var res = ga.replace("-", "<hr>");
   localStorage.setItem("dataB",ga  );
   document.getElementById("before").innerHTML = ga;
   }

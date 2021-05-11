@@ -239,6 +239,7 @@ function check_val(){
 	
  if(error>0)
  {
+   alert(bad_words)
  alert("This action is recorded!");
  var check_text=document.getElementById("dggfdf").style.backgroundColor = " #ffcccb";
  wordU();
@@ -246,7 +247,7 @@ function check_val(){
  }
  else
  {
-  console.log(this);
+ 
  }
 }
 function wordU() {
