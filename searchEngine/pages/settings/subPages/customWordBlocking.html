@@ -37,11 +37,12 @@ function ss(){
     document.getElementById("ads").style.backgroundColor = "silver"
   }
   else {
-    var qr = document.getElementById("ads").value;
-  var pp = localStorage.getItem("dataB");
-  var g = qr + "-"  + pp  ;
-  localStorage.setItem("dataB", g );
-  document.getElementById("before").innerHTML = g ;
+    var qw = document.getElementById("ads").value;
+  var py = localStorage.getItem("dataB");
+  var ga =   qw + "-" + py ;
+  var res = ga.replace(",", "<hr>");
+  localStorage.setItem("dataB",ga  );
+  document.getElementById("before").innerHTML = ga;
   }
 }
 </script>
