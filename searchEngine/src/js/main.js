@@ -224,8 +224,12 @@ function login() {
 //bad word filter
 function check_val(){
   var sd = localStorage.getItem("dataB");
- var bad_words = sd.split("-");
+  var ty = sd.split("-");
+ var bad_words = ty;
  var check_text = document.getElementById("dggfdf").value;
+ if(ty.includes(check_text)){
+   alert(74)
+ }
  var error=0;
  for(var i=0;i<bad_words.length;i++)
  {
