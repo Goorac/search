@@ -228,7 +228,7 @@ function check_val(){
  var bad_words = ty;
  var check_text = document.getElementById("dggfdf").value;
  if(ty.includes(check_text)){
-   alert(74)
+   alert(75)
  }
  var error=0;
  for(var i=0;i<bad_words.length;i++)
@@ -236,6 +236,7 @@ function check_val(){
   var val=bad_words[i];
   if((check_text.toLowerCase()).indexOf(val.toString())>-1)
   {
+    alert(74)
    error=error+1;
   }
  }
