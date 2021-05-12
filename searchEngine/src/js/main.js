@@ -230,19 +230,10 @@ function check_val(){
  for(var i=0;i<bad_words.length;i++)
  {
   var val=bad_words[i];
-  if((check_text.toLowerCase()).indexOf(val.toString())>-1)
+  if(check_text.indexOf(val.toString())>-1)
   {
    alert(7)
   }
- }
-	
- if(error>0)
- {
-alert(4646)
- }
- else
- {
-  document.getElementById("bad_notice").innerHTML="";
  }
 }
 function wordU() {
