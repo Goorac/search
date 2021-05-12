@@ -1,0 +1,102 @@
+<html>
+  <title>Goorac</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/style/style.css">
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+</head>
+<body>
+     <!--The home page-->
+  <div id="Page1"> 
+      <center>
+        <header>
+            <ul>
+             <li><a class="links" href="pages/settings/index.html"><button class="signbutton" type="button"><i style="font-size:24px" class="fa">&#xf013;</i></button></a></li>
+               <li><a href="#grid"><img class="grid" src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png" title="Google apps"></a></li>
+              <li><a href="#images">Images</a></li>
+              <li><a href="src/pages/video chat/videoChat.html">Videos</a></li>
+              </ul>  
+        </header>
+        <br>
+        <div class="logo">
+          <p style="font-size: 32px;" ><b>Goorac</b></p>
+         <!-- <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">-->
+        </div>
+        <div class="bar" >
+          <a href="#"> <img class="searchicon" data-toggle="modal" data-target="#myModal" id="" src="src/img/searchicon.png" title=""></a>
+    <input class="searchbar" type="text" placeholder="Search" onclick="show('Page2','Page1');searchPageAutoFocus()" title="Search">
+    <a href="#"> <img onclick="window.location.href = 'pages/gooracLens/gooracLens.html'" class="Lens" data-toggle="modal" data-target="#myModal" id="voice" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAADPz8+WlpalpaX5+fn09PSioqLU1NQ7Ozvm5ub7+/u4uLjb29vw8PA2NjZlZWXHx8eLi4utra0wMDC/v797e3tERERbW1tycnIfHx+RkZFqamoaGhonJyc/Pz9TU1NLS0sQEBBfX1+CgoJ3d3eixRruAAAGZUlEQVR4nO2d20LbMAxAeyHpJWla2lJKKb0N/v8Xx2AbtJETWVJsedN5T/Ahrm3Zlt3rGYZhGIZhGIZhGIbxv1Jk1Ww8CM14VmVF93L5bLQ5X/qxuJw3o1neoV65OEST++KwKLuRHL/FVvvGfizud/8YW+qGyb2o3/gUWwjgPBDzyzTVz+88ZTKC97FFGhCpqsvYFo0s2X7ZNrZDCydmTa3msQ1amVccwWm84Quey5TxBV9ilx7FhfwVM/1V9JM59beosZuHOdEEdXcT15A6Dc0dfR1C15/FLrMn/j9FrWNRF2++goOmt022m+UwNMvNdtJUKN9Iw92OnlaMHpbJdNVQLr9XOZuZxayLknswW7iK5tfYHOGXrOWCTjqDNVy4o89LxvA7ngLM5iEonuDi+czdwK947qzMvjzDHwD/gly5oEsRP8lYMv9DAQBrWYl+HGqu1jp+g38ooOZmgX06h2a2NbSi34GGJAdsNZ1x/j3BgCoatrMeMZ4NB/QdRshnN/VHTx0WlQowgNsgHz3XH111WlYaq3oxz7gnC2CCLd5g2820XswLrsEHYt9Jx4UlUQDBFC4OruoPbjsuLA1gOh43rwg0UthfcFiAFhHX5AOBBX/9owuAyUBceAGMFoYdl5XGsF5Q3MjLDNVghk7MUA1m6MQM1WCGTsxQDWboxAzVYIZOzFANKg2zvMqFNvaqM5w+DBeP88PuZXeYPy6GDwIzsIoMsxJa7nsqmV9TjeFgD+h9smft09ZhWKwat/n0J3f0lVcVhqv2Pbgv5FUfBYZj3BbcNTHFJ77hK8rvF6+k98c2nDb/AK+ZUDqPyIYPHn6/ePD/E3ENob0AzWDX4L+Iagj88VYk/kgwQ4qgyF8JZehfRT/xrKjxDH0bmS/8mptohsAeCTRenUY0Q59+8BavTR+xDHmpNj47BiIZOjZQo/EYo0YydGwzRzPXbghsNvMEH0xFMSz4OZk73Yb8T+jxEaMYcnqKP6B7jBiGMjmL2OmpGIbuWTUf9noNpbIykfOoEQzBTBQCyMyQCIaOjCtvkOk5EQyFBPt9rYacsOkaXBAV3pAe+d6Ci4TDG9JmZyDIf69jQ2eGrje4LKvwhnLHgT0qNZQ7CgUXJAY3zOQO5DugFhWDG+Y7McMdKlUSSAbu1lDwRKIXVHbPYHR3wwjXkSbzDckk8zsMbhi8LQ1vGLo/DG8YekwT3jD0uDS8YejYIrxh6PgwvGHoGJ9MMvM0ZJKZayOTzHwpmWTmvMkks25BJpm1JzLJrB+SYa1yh1wDJpPMOj4Z3l4MbpDYcWj4QTL7acgksyeKTDL72sgkszeRTDL7S8nE2yN8141QjWT2eZNJZq8+mWTyLcgkkzNDRirvyXGeNAgp74mMWO4afnQT+Dy4ZPIPyUjmkJbta4r0HFIyspnObXnAMU5GTSaXm14iYcPO8vHJaDxTochyudMmOj0Xo8ir3HeNvhg/74+7/uWw3ZQy3aaus02q5VUWzlZi7KPKsD5qEOg9FRkOwOnXV+5eFD2GrgDlyLouT5GhO8jc8RS1GDaFmOhbEECUGDbeONX/IfzqCIZteX6cWSsdhq3BJaOeqjAEjr6/gXbiywcqDBHzA/T2VIMheFHODfTIUoMhZo2OfmGDBkP4xqpr6FfIajBEbcwhh1IKDAvUXCt5c5gCwwy17Z+8DqDAEL7aTqxUCu4oyVH3gZO/oYJ7ZnCpG+QOUcNdQcA1QHXIl91puO8JuAaoDrm30HBnF2a3sdfNqtec628LvbqA2bHCCC403J2H+CEyZhU13H/YvkjOqKQ67rBsDZ84k98q7iFti59OrLeruEu25QRbXuuu4j7g5viCmXSi407nprxidiig417uyjk65cc6rrvVAy9L5z86qaIfOH4D69AtKrT1/ywyhHSm9ywCd/35bZM6kdoAB1wn/JvTahq046hW27+hwPFVbvtU48rPZLtZDmk8U+p5NS1Hw9FqIBvhvDUpMgi4jbQFqWzJW0Lt5UYgk0uo2ZCZ/JKCIW46KGnDTO6wEqWGkqcGKTXsTVFzzykb9irxiqrNsJdJNzfqDMU7DYWGwl2/RsNeITlGVWn4HvO7g6l/xPC9qkod5KXW8P07ytRVxYa9Xl4u+MfqqTZ8J5+NNmfWQEdPBNxAkVWz8YBI6LVWwzAMwzAMwzAMwzD+EX4Csz9lkUgetPgAAAAASUVORK5CYII=" title="Search by Lens"></a>
+    <a href="#"> <img onclick="init();runSpeechRecognition2()" class="voice" data-toggle="modal" data-target="#myModal" id="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
+        </div>
+        <div class="buttons">
+          <button class="button" type="button">Google Search</button>
+          <button class="button" type="button">I'm Feeling Lucky</button>
+         </div>
+</div>
+</center>
+   <!-- The Modal -->
+   <center><div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <main>
+           <!--Here visuvalizer-->
+          </main>
+          <h5 style="margin-top: 45px;">Listening...</h5>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        <p style="color:blue">Ask"Who is your boss?"</p>
+        </div>
+      </div>
+    </div>
+  </div></center>
+<!--search div-->
+  <div id="Page2" style="display:none">
+    <center>
+    <div class="bar9">
+      <a href="#"> <img class="searchicon" src="src/img/searchicon.png" title=""></a>
+<input class="searchbar9" required type="search" placeholder="Search" id="dggfdf" title="Search" onkeyup="check_val()" >
+<a href="#"> <img onclick="init();runSpeechRecognition()" class="voice" data-toggle="modal" data-target="#myModal" id="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>  
+</div>
+</center>
+<div class="searchrr">
+    <p id="before"> ggtgrf</p>  
+    <!--First time info-->
+    <p id="qw"></p>
+  </div>
+</div>
+  <!--Result page Div-->
+  <div id="Page3" style="display:none">
+    <center>
+    <div style="background-color :white ;position: relative;">
+   <center> <p style="font-size: 25px;" ><b>Goorac</b></p></center>
+    <div class="bar99">
+      <a href="#"> <img class="searchicon"  id="" src="src/img/searchicon.png" title=""></a>
+<input id="asd" class="searchbar99" type="text" placeholder="Search" onclick="show('Page2','Page3');searchPageAutoFocus()" title="Search">
+<a href="#"> <img onclick="init();runSpeechRecognition2()" class="voice" data-toggle="modal" data-target="#myModal" id="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
+    </div>
+  </div>
+</center>
+  <iframe    height="100%" width="100%" style="margin-top: -100px;" id="fsdy" class="resultEmbed" width="100%" height="100%" type="text/html" src=""></iframe>
+  </div>
+    <script onload="login()" src="src/js/main.js"></script>
+</body>
+</html> 
