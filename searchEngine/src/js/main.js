@@ -235,6 +235,7 @@ function check_val(){
   if(check_text.indexOf(val.toString())>-1){
    document.getElementById("dggfdf").style.backgroundColor = "red"
    location.reload();
+   wordU();
   }
  }
 }
