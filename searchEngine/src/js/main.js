@@ -232,7 +232,7 @@ function check_val(){
   var val=bad_words[i];
   if((check_text.toLowerCase()).indexOf(val.toString())>-1)
   {
-   error=error+1;
+   alert(7)
   }
  }
 	
