@@ -224,14 +224,25 @@ function login() {
 //bad word filter
 function check_val(){
   var sd = localStorage.getItem("dataB");
-  var bad_words = sd.toUpperCase();
-  var ty = bad_words.split("✖️");
- var check_text = document.getElementById("dggfdf").value;
- var n = check_text.toUpperCase();
- if(ty.includes(n)){
-  var check_text=document.getElementById("dggfdf").style.backgroundColor = " #ffcccb";
-  wordU();
-  location.reload();
+  var bad_words = sd.split("✖️");
+ var check_text=document.getElementById("dggfdf").value;
+ var error=0;
+ for(var i=0;i<bad_words.length;i++)
+ {
+  var val=bad_words[i];
+  if((check_text.toLowerCase()).indexOf(val.toString())>-1)
+  {
+   error=error+1;
+  }
+ }
+	
+ if(error>0)
+ {
+alert(4646)
+ }
+ else
+ {
+  document.getElementById("bad_notice").innerHTML="";
  }
 }
 function wordU() {
