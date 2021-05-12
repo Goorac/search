@@ -84,7 +84,7 @@ const init = () => {
 function searchPageAutoFocus() {
   var qw = localStorage.getItem("data");
   if( qw == null ){
-    document.getElementById("qw").innerHTML = "<center><br><br><br><br><img src='https://cdn.dribbble.com/users/1785190/screenshots/3906047/search.gif'" + 'style="width:200px;hight:auto"' + "></center>"
+    document.getElementById("qw").innerHTML = "<center><br><br><br><br><img src='https://cdn.dribbble.com/users/1785190/screenshots/3906047/search.gif'" + 'style="width:200px;hight:auto"' + "><br>You can block custom words on <b>Settings>History Controls>Custom Word Blocking</b><br>You can view back searches under <b> Data in Search</b> option </center>"
     localStorage.setItem("data", "<center>Siva Manikandan</center>" );
   }
   else{
@@ -224,31 +224,14 @@ function login() {
 //bad word filter
 function check_val(){
   var sd = localStorage.getItem("dataB");
-  var ty = sd.split("-");
- var bad_words = ty;
+  var bad_words = sd.toUpperCase();
+  var ty = bad_words.split("✖️");
  var check_text = document.getElementById("dggfdf").value;
- if(ty.includes( (check_text.toLowerCase()).indexOf(val.toString()))){
-  alert("This action is recorded!");
+ var n = check_text.toUpperCase();
+ if(ty.includes(n)){
   var check_text=document.getElementById("dggfdf").style.backgroundColor = " #ffcccb";
   wordU();
   location.reload();
- }
- var error=0;
- for(var i=0;i<bad_words.length;i++)
- {
-  var val=bad_words[i];
- }
-	
- if(error>0)
- {
- alert("This action is recorded!");
- var check_text=document.getElementById("dggfdf").style.backgroundColor = " #ffcccb";
- wordU();
- location.reload();
- }
- else
- {
- 
  }
 }
 function wordU() {

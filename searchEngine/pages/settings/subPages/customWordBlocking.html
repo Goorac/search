@@ -17,18 +17,17 @@
         <p class="afh"><i type="button" onclick="window.history.back();" class="fa">&#xf060;</i><b> Custom Word Blocking</b></p>
     </div>
     <br>
+    <center>
    <div class="">
-       <center>
 <input type="text" id="ads" placeholder="Add words" style="text-align: center;margin-left: 50px;border-radius: 15px;margin: o auto;border: 0.5px solid black ;" >
 <button class="btn btn-primary" style="border-radius:15px;" onclick="ss()" >Add</button>
-</center>
    </div>
-   <div>
-       <hr>
-       <p style="font-size: 16px;text-align: center;margin-top: 40px;"><b>words to Block</b></p>
-       <br>
-       <p style="margin-left: 50px;" id="before"></p>
+   <hr><br>
+   <p style="font-size: 16px;text-align: center;margin-top: 40px;"><b>words to Block</b></p>
+   <div style="width: auto;height:500px" >
+       <p style="margin-left: 50px;font-size: 18px;" id="before"></p>
    </div>
+  </center>
 </body>
 <script>
 function ss(){
@@ -39,13 +38,21 @@ function ss(){
   else {
     var qw = document.getElementById("ads").value;
   var py = localStorage.getItem("dataB");
-  var ga =   qw + "-" + py ;
+  var ga =   qw + "✖️" + py ;
   localStorage.setItem("dataB",ga );
   document.getElementById("before").innerHTML = ga ;
   }
 }
 function s() {
- 
+  var py = localStorage.getItem("dataB");
+  if( py == null ){
+    localStorage.setItem("dataB", "boody" )
+    alert("User cannot search the words you entred here")
+  }
+  else {
+    var pye = localStorage.getItem("dataB");
+    document.getElementById("before").innerHTML = pye ;
+  }
 }
 </script>
 </html>
