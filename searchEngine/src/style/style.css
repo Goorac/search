@@ -61,7 +61,7 @@ li a:hover {
 .searchbar{
   height:42px;
   border:none;
-  width:300px;
+  width:290px;
   font-size:14px;
   outline: none;  
 }
@@ -71,16 +71,15 @@ li a:hover {
   width:300px;
   font-size:14px;
   outline: none;
-  
 }
 .voice{
   height:18px;
   position:relative;
   top: 0.5px;
-  left: -25px;
+  left: -20px;
 }
 .lens{
-  height:23px;
+  height:20px;
   position:relative;
   top: 1px;
   left: -40px;
