@@ -59,7 +59,7 @@ li a:hover {
   outline:none;
 }
 .searchbar{
-  height:40px;
+  height:45px;
   border:none;
   width:300px;
   font-size:14px;
@@ -67,7 +67,7 @@ li a:hover {
   
 }
 .searchbar99{
-  height:40px;
+  height:45px;
   border:none;
   width:300px;
   font-size:14px;
@@ -75,16 +75,16 @@ li a:hover {
   
 }
 .voice{
-  height:15px;
+  height:18px;
   position:relative;
   top:1px;
   left: -8px;
 }
 .lens{
-  height:15px;
+  height:20px;
   position:relative;
   top:1.9px;
-  left: -16px;
+  left: -18px;
 }
 .buttons{
   margin-top:30px;
@@ -115,7 +115,7 @@ li a:hover {
    left: 2px;
 }
 .searchbar9{
-  height:40px;
+  height: 43px;
   border:none;
   width: 300px;
   font-size:16px;
