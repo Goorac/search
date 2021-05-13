@@ -260,3 +260,14 @@ function ws(){
   var res = g.replace(",", "<hr>");
   localStorage.setItem("dataA", res );
 }
+//hide voice icon if anything on search 
+function hideIcon() {
+  var v = document.getElementById("dggfdf").value;
+if( v == "" ){
+ document.getElementById("voicee").style.display ='block'
+ document.getElementById("voicee").style = "margin-top:0.5px"
+}
+else{
+  document.getElementById("voicee").style.display = "none"
+}
+}
