@@ -265,9 +265,9 @@ function hideIcon() {
   var v = document.getElementById("dggfdf").value;
 if( v == "" ){
  document.getElementById("voicee").style.display ='block'
- document.getElementById("voicee").style = "margin-top:0.5px"
+ document.getElementById("voicee").style = "margin-top:0.5pxposition:relative"
 }
 else{
-  document.getElementById("voicee").style.display = "none"
+  document.getElementById("voicee").style.display = 'none'
 }
 }
