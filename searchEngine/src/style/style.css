@@ -39,9 +39,9 @@ li a:hover {
 }
 .bar{
   margin:0 auto;
-  width:375px;
-  border-radius:30px;
-  border:2px solid #dcdcdc;
+  width:380px;
+  border-radius:35px;
+  border: 2.5px solid #dcdcdc;
 }
 .bar99{
   background-color: white;
@@ -59,12 +59,11 @@ li a:hover {
   outline:none;
 }
 .searchbar{
-  height:45px;
+  height:42px;
   border:none;
   width:300px;
   font-size:14px;
-  outline: none;
-  
+  outline: none;  
 }
 .searchbar99{
   height:45px;
@@ -77,14 +76,14 @@ li a:hover {
 .voice{
   height:18px;
   position:relative;
-  top:1px;
-  left: -18px;
+  top: 0.5px;
+  left: -20px;
 }
 .lens{
-  height:19px;
+  height:23px;
   position:relative;
-  top:1.9px;
-  left: -45px;
+  top: 1px;
+  left: -40px;
 }
 .buttons{
   margin-top:30px;
@@ -111,8 +110,8 @@ li a:hover {
 .searchicon {
   height:12px;
   position:relative;
-  top:0.5px;
-   left: 2px;
+  top: 0.5px;
+   left: 2.5px;
 }
 .searchbar9{
   height: 43px;
