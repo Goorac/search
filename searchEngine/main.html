@@ -1,6 +1,6 @@
 <html>
   <title>Goorac</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -86,8 +86,8 @@ function show(shown, hidden) {
   <!--Result page Div-->
   <div id="Page3" style="display:none">
     <center>
-    <div style="background-color :white ;position: relative;">
-   <center> <p style="font-size: 25px;" ><b>Goorac</b></p></center>
+    <div style="position:  absolute ;align-content: center; margin-top: 10px; ">
+      <br><br>
     <div class="bar99">
       <a href="#"><i style="color:silver;margin-left: 8px;" class="fa">&#xf002;</i></a>
 <input id="asd" class="searchbar99" type="text" placeholder="Search" onclick="show('Page2','Page3');searchPageAutoFocus()" title="Search">
@@ -95,7 +95,7 @@ function show(shown, hidden) {
     </div>
   </div>
 </center>
-  <iframe    height="100%" width="100%" style="margin-top: -100px;" id="fsdy" class="resultEmbed" width="100%" height="100%" type="text/html" src=""></iframe>
+  <iframe onscroll="aaa()" width="100%" height="100%"src="pages/resultPage/result.html"></iframe>
   </div>
     <script onload="login()" src="src/js/main.js"></script>
 </body>

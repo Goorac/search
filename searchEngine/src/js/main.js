@@ -194,7 +194,7 @@ function  ffdrhffh() {
 function jghhh() {
   var t = document.getElementById("dggfdf").value ;
   document.getElementById("asd").value = t;
-  document.getElementById("fsdy").src = "https://www.bing.com/search?q=" + t  ;
+  sessionStorage.setItem("res" , "https://www.bing.com/search?q=" + t );
    ss()
    show('Page3','Page2');
 }
@@ -210,7 +210,7 @@ function  ffdrhffh2() {
 function jghhh2() {
   var t = document.getElementById("dggfdf").value ;
   document.getElementById("asd").value = t;
-  document.getElementById("fsdy").src = "https://www.bing.com/search?q=" + t  ;
+  sessionStorage.setItem("res" , "https://www.bing.com/search?q=" + t );
    ss()
    show('Page3','Page1');
 }
@@ -270,4 +270,20 @@ if( v == "" ){
 else{
   document.getElementById("voicee").style.display = 'none'
 }
+}
+//animation of a resultsection
+onload=function(){	
+	var lF = document.getElementById('hh').contentWindow;
+	if(window.pageYOffset!=undefined){ //opera, firefox,& gecko browsers
+		lF.onscroll = function(){
+			document.getElementById('leftIn').value= lF.pageYOffset;
+		}
+	}
+	else{//IE	
+  		if(lF.document.documentElement)lF= lF.document.documentElement; 
+  		else lF=document.body;  		
+ 		lF.onscroll=function(){
+      document.getElementById("ty").style  =  lF.scrollTop;
+		}		
+	}
 }
