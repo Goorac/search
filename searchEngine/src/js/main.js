@@ -277,13 +277,15 @@ onload=function(){
 	if(window.pageYOffset!=undefined){ //opera, firefox,& gecko browsers
 		lF.onscroll = function(){
 			document.getElementById('leftIn').value= lF.pageYOffset;
+      var t = lF.pageYOffset;
+      document.getElementById("rtr").style.marginTop = "-" + t
 		}
 	}
 	else{//IE	
   		if(lF.document.documentElement)lF= lF.document.documentElement; 
   		else lF=document.body;  		
  		lF.onscroll=function(){
-      document.getElementById("ty").style  =  lF.scrollTop;
+			document.getElementById('leftIn').value= lF.scrollTop;
 		}		
 	}
 }
