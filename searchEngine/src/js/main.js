@@ -198,6 +198,10 @@ function jghhh() {
   resr()
    ss()
    show('Page3','Page2');
+   setTimeout(
+    function(){
+   responsiveVoice.speak(t)
+     } , 1500);
 }
 function  ffdrhffh2() {
   var y = document.getElementById("dggfdf").value ;
@@ -215,7 +219,12 @@ function jghhh2() {
   resr()
    ss()
    show('Page3','Page1');
+   setTimeout(
+    function(){
+   responsiveVoice.speak(t)
+     } , 1500);
 }
+
 function login() {
   var pa = localStorage.getItem("userPassword");
   if( pa == null ){
@@ -302,4 +311,5 @@ function resr() {
   var iframe = document.getElementById('hh');
   var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
   innerDoc.getElementById("rt").src = localStorage.getItem("res")
+  innerDoc.getElementById("myVideo").play()
 }
