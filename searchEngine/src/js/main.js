@@ -196,6 +196,7 @@ function jghhh() {
   document.getElementById("asd").value = t;
   sessionStorage.setItem("res" , "https://www.bing.com/search?q=" + t );
    ss()
+   resr()
    show('Page3','Page2');
 }
 function  ffdrhffh2() {
@@ -212,6 +213,7 @@ function jghhh2() {
   document.getElementById("asd").value = t;
   sessionStorage.setItem("res" , "https://www.bing.com/search?q=" + t );
    ss()
+   resr()
    show('Page3','Page1');
 }
 function login() {
@@ -286,6 +288,11 @@ onload=function(){
   		else lF=document.body;  		
  		lF.onscroll=function(){
 			document.getElementById('leftIn').value= lF.scrollTop;
+      var t = lF.scrollTop;
+      document.getElementById("rtr").style.marginTop = "-" + t
 		}		
 	}
+}
+function resr() {
+  document.getElementById('hh').contentDocument.location.reload(true); 
 }
