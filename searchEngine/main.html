@@ -1,5 +1,6 @@
 <html>
   <title>Goorac</title>
+  <base target="_blank">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -89,14 +90,14 @@ function show(shown, hidden) {
     <div style="position:  absolute;margin-top:10px;margin-left:5px;">
       <br><br>
     <div class="bar99"id="rtr">
-      <a href="#"><i style="color:silver;margin-left: 8px;" class="fa">&#xf002;</i></a>
+      <a href="#"><i id="sear" style="color:silver;margin-left: 8px;" class="fa">&#xf002;</i></a>
 <input id="asd" class="searchbar99" type="text" placeholder="Search" onclick="show('Page2','Page3');searchPageAutoFocus()" title="Search">
 <a href="#"> <img onclick="init();runSpeechRecognition2()" class="voice" data-toggle="modal" data-target="#myModal" id="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
     </div>
   </div>
 </center>
 <input id="leftIn" type="hidden" value="">
-  <iframe id="hh" width="100%" height="100%" src="pages/resultPage/result.html"></iframe>
+  <iframe id="hh" width="100%" height="100%" src="pages/resultPage/result.html" target="_blank" ></iframe>
   </div>
     <script onload="login()" src="src/js/main.js"></script>
 </body>

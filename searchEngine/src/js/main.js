@@ -194,9 +194,9 @@ function  ffdrhffh() {
 function jghhh() {
   var t = document.getElementById("dggfdf").value ;
   document.getElementById("asd").value = t;
-  sessionStorage.setItem("res" , "https://www.bing.com/search?q=" + t );
+  localStorage.setItem("res" , "https://www.bing.com/search?q=" + t );
+  resr()
    ss()
-   resr()
    show('Page3','Page2');
 }
 function  ffdrhffh2() {
@@ -211,9 +211,9 @@ function  ffdrhffh2() {
 function jghhh2() {
   var t = document.getElementById("dggfdf").value ;
   document.getElementById("asd").value = t;
-  sessionStorage.setItem("res" , "https://www.bing.com/search?q=" + t );
+  localStorage.setItem("res" , "https://www.bing.com/search?q=" + t );
+  resr()
    ss()
-   resr()
    show('Page3','Page1');
 }
 function login() {
@@ -274,13 +274,20 @@ else{
 }
 }
 //animation of a resultsection
-onload=function(){	
+onload=function() {	
 	var lF = document.getElementById('hh').contentWindow;
 	if(window.pageYOffset!=undefined){ //opera, firefox,& gecko browsers
 		lF.onscroll = function(){
 			document.getElementById('leftIn').value= lF.pageYOffset;
       var t = lF.pageYOffset;
       document.getElementById("rtr").style.marginTop = "-" + t
+      if(t > 58 ){
+      document.getElementById("rtr").style.marginTop = "-58";
+      document.getElementById("sear").innerHTML = "G"
+      }
+      else(
+        document.getElementById("sear").innerHTML = "&#xf002;"
+      )
 		}
 	}
 	else{//IE	
@@ -288,11 +295,11 @@ onload=function(){
   		else lF=document.body;  		
  		lF.onscroll=function(){
 			document.getElementById('leftIn').value= lF.scrollTop;
-      var t = lF.scrollTop;
-      document.getElementById("rtr").style.marginTop = "-" + t
 		}		
 	}
 }
 function resr() {
-  document.getElementById('hh').contentDocument.location.reload(true); 
+  var iframe = document.getElementById('hh');
+  var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+  innerDoc.getElementById("rt").src = localStorage.getItem("res")
 }
