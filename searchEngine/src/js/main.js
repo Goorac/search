@@ -292,7 +292,7 @@ onload=function() {
       document.getElementById("rtr").style.marginTop = "-" + t
       if(t > 58 ){
       document.getElementById("rtr").style.marginTop = "-58";
-      document.getElementById("sear").innerHTML = "G"
+      document.getElementById("sear").innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/G_LOGO.png"' + 'class="voice"'+'style="left:2px">'
       }
       else(
         document.getElementById("sear").innerHTML = "&#xf002;"
