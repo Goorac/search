@@ -44,11 +44,11 @@ li a:hover {
   border: 2.5px solid #dcdcdc;
 }
 .bar99{
-  left: 8px;
+  left: 0px;
   background-color: white;
   position: relative;
   margin:0 auto;
-  width: 385px;
+  width: 375px;
   border-radius:30px;
   border:2px solid #dcdcdc;
 }
