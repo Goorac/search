@@ -39,17 +39,21 @@ li a:hover {
 }
 .bar{
   margin:0 auto;
-  width:375px;
+  width:350px;
   border-radius:35px;
-  border: 2.5px solid #dcdcdc;
+  border-bottom: 3.5px solid #dcdcdc;
+  border-right: 2.5px solid #dcdcdc;
+  border-left: 2.5px solid #dcdcdc;
 }
 .bar99{
   background-color: white;
   position: relative;
   margin:0 auto;
-  width: 375px;
+  width: 355px;
   border-radius:30px;
-  border:2px solid #dcdcdc;
+  border-bottom: 3px solid #dcdcdc;
+  border-right: 2.5px solid #dcdcdc;
+  border-left: 2.5px solid #dcdcdc;
 }
 .bar:hover{
   box-shadow: 1px 1px 8px 1px #dcdcdc;
@@ -61,14 +65,14 @@ li a:hover {
 .searchbar{
   height:42px;
   border:none;
-  width:290px;
+  width:270px;
   font-size:14px;
   outline: none;  
 }
 .searchbar99{
   height:45px;
   border:none;
-  width:300px;
+  width:280px;
   font-size:14px;
   outline: none;
 }
@@ -115,16 +119,16 @@ li a:hover {
 .searchbar9{
   height: 43px;
   border:none;
-  width: 300px;
+  width: 280px;
   font-size:16px;
   outline: none;
   
 }
 .bar9 {
   margin:0 auto;
-  width: 375px;
-  border-radius:30px;
-  border: 2px solid #dcdcdc;
+  width: 355px;
+  border-radius:1px;
+  border-bottom: 3.5px solid #dcdcdc;
 }
 .searchrr {
   height: 850px;
