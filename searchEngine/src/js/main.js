@@ -313,3 +313,18 @@ function resr() {
   innerDoc.getElementById("rt").src = localStorage.getItem("res")
   innerDoc.getElementById("myVideo").play()
 }
+//bed time controls
+onload=function btime() {
+  var t =   localStorage.getItem("bTimeS");
+  var p =   localStorage.getItem("bTimeE");
+  var d = new Date();
+   var h = d.getHours();
+   var m = d.getMinutes();
+   var c = h + ":" + m ;
+   var cc = c.replace(":","")
+ var tt = t.replace(":","")
+ var pp = p.replace(":","")
+   if(cc > tt && cc < pp ){
+     location.href = "pages/bedTimeReminder/betTimeReminder.html"
+ }
+}

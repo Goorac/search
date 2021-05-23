@@ -12,19 +12,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../src/style/style.css">
 </head>
-<body onload="run()" >
+<body>
     <div class="settingsText">
         <p class="afh"><i type="button" onclick="window.history.back();" class="fa">&#xf060;</i><b> Bed time Controls</b></p>
     </div>
     <center>
      <label style="margin-top: 100px;">Start time</label> <input type="time" id="startTime"> <br><br>
-     <label>End time</label> <input type="time" id="endTime"></label>
+     <label>End time</label> <input type="time" id="endTime"></label><br>
+    __________<button class="btn btn-primary" id="tk" onclick="run()">Set</button>
+    <br><br><br><br><br><br><br><p id="d">This functiion is currently Disabled choose a time to Enable</p>
 </center>
     </body>
 <script>
 function run() {
-  var batteryPromise = battery.level;
-  document.getElementById("demo").innerHTML = batteryPromise;
+    var a = document.getElementById("startTime").value;
+    var b = document.getElementById("endTime").value;
+    if(a == "" || b == "" ){
+        alert("You must fill out the box")
+    }
+    else{
+        localStorage.setItem("bTimeS",a);
+        localStorage.setItem("bTimeE",b);
+        aaa();
+    }
+}
+function aaa() {
+ var t =   localStorage.getItem("bTimeS");
+ var p =   localStorage.getItem("bTimeE");
+    if (t == "" || p == "") {
+        alert("sorry somthing went rong! Reset to done")
+    } else {
+        document.getElementById("d").innerHTML = "start in: " + t + "<br> End in: " + p
+        document.getElementById("startTime").value = t;
+        document.getElementById("endTime").value = p;
+        document.getElementById("tk").innerHTML = "change";
+    }
+}
+onload=function(){
+    aaa()
 }
 </script>
 </html>
