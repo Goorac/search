@@ -39,8 +39,8 @@ function run() {
 function aaa() {
  var t =   localStorage.getItem("bTimeS");
  var p =   localStorage.getItem("bTimeE");
-    if (t == "" || p == "") {
-        alert("sorry somthing went rong! Reset to done")
+    if (t == null || p == null) {
+       
     } else {
         document.getElementById("d").innerHTML = "start in: " + t + "<br> End in: " + p
         document.getElementById("startTime").value = t;

@@ -25,9 +25,9 @@ function show(shown, hidden) {
         <header>
             <ul>
              <li><a class="links" href="pages/settings/index.html"><button class="signbutton" type="button"><i style="font-size:24px" class="fa">&#xf013;</i></button></a></li>
-               <li><a href="#grid"><img class="grid" src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png" title="Google apps"></a></li>
+               <li><a href="#grid"><img class="grid" src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png" title="Goorac apps"></a></li>
               <li><a href="#images">Images</a></li>
-              <li><a href="src/pages/video chat/videoChat.html">Videos</a></li>
+              <li><a href="">Videos</a></li>
               </ul>  
         </header>
         <br>
@@ -74,7 +74,7 @@ function show(shown, hidden) {
     <center>
     <div class="bar9">
       <a href="#"><i style="color:silver;margin-left: 8px;" class="fa">&#xf002;</i></a>
-<input class="searchbar9" required type="search" placeholder="Search" id="dggfdf" title="Search" onkeyup="check_val();hideIcon()" onkeypDown="hideIcon()"  >
+<input class="searchbar9" required type="search" placeholder="Search" id="dggfdf" title="Search" onkeyup="hideIcon();check_val();" onkeypDown="hideIcon()" onkeypress="hideIcon()" >
 <label><img onclick="init();runSpeechRecognition()" class="voice" data-toggle="modal" data-target="#myModal" id="voicee" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice" >
 </label></div>
 </center>
@@ -86,8 +86,7 @@ function show(shown, hidden) {
 </div>
   <!--Result page Div-->
   <div id="Page3" style="display:none;">
-    <center>
-    <div style="position:absolute;margin-top:10px;margin-left:10px;">
+    <div style="position:absolute;margin-top:10px;" id="trt" >
       <br><br>
     <div class="bar99"id="rtr">
       <a href="#"><i id="sear" style="color:silver;margin-left: 8px;" class="fa">&#xf002;</i></a>
@@ -95,7 +94,6 @@ function show(shown, hidden) {
 <a href="#"> <img onclick="init();runSpeechRecognition2()" class="voice" data-toggle="modal" data-target="#myModal" id="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
     </div>
   </div>
-</center>
 <input id="leftIn" type="hidden" value="">
   <iframe id="hh" width="100%" height="100%" src="pages/resultPage/result.html" target="_blank" ></iframe>
   </div>

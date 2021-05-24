@@ -276,7 +276,7 @@ function hideIcon() {
   var v = document.getElementById("dggfdf").value;
 if( v == "" ){
  document.getElementById("voicee").style.display ='block'
- document.getElementById("voicee").style = "margin-top:0.5pxposition:relative"
+ document.getElementById("voicee").style = "margin-top:0.5px;position:relative"
 }
 else{
   document.getElementById("voicee").style.display = 'none'
@@ -293,10 +293,12 @@ onload=function() {
       if(t > 58 ){
       document.getElementById("rtr").style.marginTop = "-58";
       document.getElementById("sear").innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/G_LOGO.png"' + 'class="voice"'+'style="left:2px">'
-      }
-      else(
+      document.getElementById("trt").style.backgroundColor = "white"; 
+    }
+      else{
         document.getElementById("sear").innerHTML = "&#xf002;"
-      )
+        document.getElementById("trt").style.backgroundColor ="rgba(255, 255, 255, 0)"; 
+      }
 		}
 	}
 	else{//IE	
@@ -306,6 +308,7 @@ onload=function() {
 			document.getElementById('leftIn').value= lF.scrollTop;
 		}		
 	}
+  btime()
 }
 function resr() {
   var iframe = document.getElementById('hh');
@@ -314,7 +317,7 @@ function resr() {
   innerDoc.getElementById("myVideo").play()
 }
 //bed time controls
-onload=function btime() {
+function btime() {
   var t =   localStorage.getItem("bTimeS");
   var p =   localStorage.getItem("bTimeE");
   var d = new Date();
