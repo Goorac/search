@@ -289,15 +289,15 @@ onload=function() {
 		lF.onscroll = function(){
 			document.getElementById('leftIn').value= lF.pageYOffset;
       var t = lF.pageYOffset;
-      document.getElementById("rtr").style.marginTop = "-" + t
-      if(t > 58 ){
-      document.getElementById("rtr").style.marginTop = "-58";
+      document.getElementById("trt").style.marginTop = "-" + t
+      if(t > 47 ){
+      document.getElementById("trt").style.marginTop = "-47";
       document.getElementById("sear").innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/G_LOGO.png"' + 'class="voice"'+'style="left:2px">'
-      document.getElementById("trt").style.backgroundColor = "white"; 
+      document.getElementById("trt").style.backgroundColor = "#0031CB"; 
     }
       else{
         document.getElementById("sear").innerHTML = "&#xf002;"
-        document.getElementById("trt").style.backgroundColor ="rgba(255, 255, 255, 0)"; 
+        document.getElementById("trt").style ="background-color:rgba(255, 255, 255, 0);position:absolute;top:7.5px;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%)"; 
       }
 		}
 	}
