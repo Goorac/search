@@ -289,9 +289,10 @@ onload=function() {
 		lF.onscroll = function(){
 			document.getElementById('leftIn').value= lF.pageYOffset;
       var t = lF.pageYOffset;
-      document.getElementById("trt").style.marginTop = "-" + t
+      document.getElementById("rtr").style.marginTop =  -t;
       if(t > 58 ){
-      document.getElementById("trt").style.marginTop = "-58";
+      document.getElementById("rtr").style.marginTop = "-48";
+      document.getElementById("trt").style = "position:absolute;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);width:100%"
       document.getElementById("sear").innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/G_LOGO.png"' + 'class="voice"'+'style="left:2px">'
       document.getElementById("trt").style.backgroundColor = "#0031CB"; 
     }
