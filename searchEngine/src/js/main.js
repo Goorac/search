@@ -293,7 +293,7 @@ onload=function() {
       if(t > 58 ){
       document.getElementById("rtr").style.marginTop = "-48";
       document.getElementById("rtr").className = "bar99";
-      document.getElementById("trt").style = "position:absolute;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);width:100%;margin-top:-20px"
+      document.getElementById("trt").style = "position:absolute;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);width:100%;margin-top:-30px"
       document.getElementById("sear").innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/G_LOGO.png"' + 'class="voice"'+'style="left:2px">'
       document.getElementById("trt").style.backgroundColor = "#0031CB"; 
       document.getElementById("lk").style.display = "block"; 
