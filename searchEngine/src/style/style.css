@@ -39,7 +39,7 @@ li a:hover {
 }
 .bar{
   margin:0 auto;
-  width:350px;
+  width:90%;
   border-radius:35px;
   border-bottom: 3.5px solid #dcdcdc;
   border-right: 2.5px solid #dcdcdc;
@@ -49,8 +49,11 @@ li a:hover {
   background-color: white;
   position: relative;
   margin:0 auto;
-  width: 360px;
-  border-radius:30px;
+  width: 100%;
+  border-top-left-radius:45px;
+  border-top-right-radius:45px;
+  border-bottom-left-radius:30px;
+  border-bottom-right-radius:30px;
   border-bottom: 3px solid #dcdcdc;
   border-right: 2.5px solid #dcdcdc;
   border-left: 2.5px solid #dcdcdc;
@@ -65,14 +68,14 @@ li a:hover {
 .searchbar{
   height:42px;
   border:none;
-  width:270px;
+  width:75%;
   font-size:14px;
   outline: none;  
 }
 .searchbar99{
   height:45px;
   border:none;
-  width:290px;
+  width:85%;
   font-size:14px;
   outline: none;
 }
